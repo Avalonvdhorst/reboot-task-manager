@@ -1,0 +1,16 @@
+<div class="main">
+  <div class="inner">
+    <h1><%= @task.title %></h1>
+    <div class="task-details">
+      <h2><%= @task.details %></h2>
+    </div>
+    <div class="completed">
+      <% if @task.completed == true %>
+      <h3><i class="far fa-check-square"></i></h3><h3 class="special">You already completed this task</h3>
+      <% else %>
+        <h3><i class="far fa-square"></i></h3><h3 class="special">You did not yet complete this task</h3>
+      <% end %>
+    </div>
+    <h2><%= link_to 'Back to my tasks', tasks_path %></h2>
+  </div>
+</div>

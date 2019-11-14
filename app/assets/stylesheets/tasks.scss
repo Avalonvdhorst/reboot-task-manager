@@ -1,0 +1,100 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// CSS FOR ALL PAGES
+.main {
+  margin: 0 auto;
+  font-family: 'Roboto Mono', monospace;
+  width: 50%;
+  padding: 20px 0px;
+  h2 {
+    font-weight: lighter;
+  }
+  h3 {
+    font-weight: lighter;
+  }
+}
+
+.inner {
+  margin-left: 70px;
+}
+
+// CSS FOR INDEX PAGE
+
+.task-box {
+  color: black;
+}
+
+.tasks-new {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+// CSS FOR SHOW PAGE
+.task-details {
+  width: 80%;
+  background-color: #e0acdf;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.completed {
+  // display: inline;
+  padding-top: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    margin: 0;
+  }
+  .special {
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+}
+
+
+// STYLING OF THE FORM
+
+.inner-form {
+  padding: 100px;
+  h1 {
+    text-align: center;
+  }
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+input[type=button], input[type=submit] {
+  background-color: rgba(155, 78, 183, 0.7);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  &:hover {
+    background-color: rgba(155, 78, 183, 1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+<div class="main">
+  <div class="inner">
+    <h1>Welcome to your Task Manager!</h1>
+    <div class="tasks-new">
+      <h2>Here are all your tasks:</h2>
+    <h3><%= link_to 'New Task', tasks_new_path  %></h3>
+    </div>
+    <% @tasks.each do |task| %>
+      <div class="task-box">
+        <% if task.completed == false %>
+          <i class="far fa-square"></i>
+        <% else %>
+          <i class="far fa-check-square"></i>
+        <% end %>
+        <%= link_to task.title, task_path(task) %>
+      </div> <!--- closing task-box div -->
+    <% end %>
+  </div> <!--- closing inner div -->
+</div> <!--- closing main div -->
