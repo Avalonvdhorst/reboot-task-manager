@@ -8,6 +8,9 @@
   font-family: 'Roboto Mono', monospace;
   width: 50%;
   padding: 20px 0px;
+  h1 {
+    padding-bottom: 20px;
+  }
   h2 {
     font-weight: lighter;
   }
@@ -29,12 +32,20 @@
 .tasks-new {
   display: flex;
   justify-content: space-between;
+  h1, h2 {
+    margin: 0;
+  }
+  h2 {
+    padding-top: 8px;
+  }
 }
+
+
 
 
 // CSS FOR SHOW PAGE
 .task-details {
-  width: 80%;
+  width: 100%;
   background-color: #e0acdf;
   border-radius: 5px;
   padding: 15px;
@@ -80,10 +91,18 @@ input[type=button], input[type=submit] {
   color: white;
   padding: 8px 16px;
   text-decoration: none;
-  margin: 4px 2px;
+  margin: 4px 40px;
   &:hover {
     background-color: rgba(155, 78, 183, 1);
   }
+}
+
+input[type=checkbox] {
+  font-size: 32px;
+}
+
+#task_completed {
+  margin-right: 0;
 }
 
 
